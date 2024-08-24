@@ -151,6 +151,23 @@ section p {
   background-color: #181818;
 }
 
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.profile-picture img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-picture img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.6);
+}
+
 footer {
   align-items: center;
   height: 100%;
@@ -224,6 +241,10 @@ nav ul li a {
 .project-item.animate {
   opacity: 1;
   transform: translateY(0);
+}
+.project-item .profile-picture img {
+  width: 100px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

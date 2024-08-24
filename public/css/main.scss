@@ -188,6 +188,27 @@ section {
   }
 }
 
+// Estilos para foto de perfil
+// Estilos para a imagem de perfil
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+
+  img {
+    width: 300px; // Defina o tamanho da imagem
+    height: auto;
+    border-radius: 50%; // Deixe a imagem redonda
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5); // Efeito de vinheta
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Transições suaves
+
+    &:hover {
+      transform: scale(1.05); // Aumentar levemente ao passar o mouse
+      box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.6); // Intensificar a vinheta
+    }
+  }
+}
+
 footer {
   align-items: center;
   height: 100%;
@@ -293,4 +314,9 @@ nav ul li a {
     opacity: 1;
     transform: translateY(0);
   }
+
+  .profile-picture img {
+    width: 100px;
+    height: 100px; // Ajuste o tamanho da imagem para telas menores
+  } 
 }

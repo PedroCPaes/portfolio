@@ -13,6 +13,17 @@ $(document).ready(function () {
     });
   });
 
+  // scripts.js
+$(document).ready(function() {
+  const $mobileMenu = $('#mobile-menu');
+  const $navList = $('.nav-list');
+
+  $mobileMenu.on('click', function() {
+    $navList.toggleClass('active');
+  });
+});
+
+
   // Ajustar vídeo responsivo
   function resizeVideo() {
     var videoContainer = $('.video-container');
